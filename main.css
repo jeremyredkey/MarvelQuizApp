@@ -1,0 +1,102 @@
+/* Colors Hexcodes:
+black: #000000;
+oxford-blue: #14213d;
+orange-web: #fca311;
+platinum: #e5e5e5;
+white: #ffffff; */
+
+body {
+    background: url('img/marvel-quiz-background.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+h1,
+h2 {
+    color: #fff;
+}
+
+small {
+    color: #e5e5e5 !important;
+}
+
+.overlay {
+    width: 100%;
+    height: 100% !important;
+    background: rgba(20, 33, 61, 0.80);
+    z-index: 2000;
+    border-top: 10px solid red;
+    padding-top: 200px;
+    padding-bottom: 18%;
+    border-bottom: 10px solid red;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+main {
+    color: #14213d;
+}
+
+#quiz-container {
+    background-color: #fff;
+    margin-top: 80px;
+    padding: 20px 10px;
+}
+
+.form-check {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1.1em;
+    font-weight: bold;
+
+}
+
+label:hover {
+    transition-delay: 100ms;
+    margin-left: 13px;
+    transform: scale(1.2);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #fca311;
+    border-color: #fca311;
+}
+
+.btn-primary:hover {
+    background-color: rgba(252, 163, 17, 0.90);
+    border-color: rgba(252, 163, 17, 0.90);
+}
+
+
+.btn-primary:focus {
+    background: #14213d;
+}
+
+.lead {
+    font-weight: bold;
+}
+
+.active {
+    transform: scale(1.2);
+    position: relative;
+    right: -2px;
+}
+
+.right-answer {
+ background:ivory;
+ padding: 10px 20px;
+ margin: 5px 20px;
+ border:2px solid greenyellow;
+}
+
+.wrong-answer {
+  background:ivory;
+  padding: 10px;
+  margin: 5px 20px;
+  border:2px solid #fe0000;
+}
