@@ -67,9 +67,30 @@ function render() {
     html += `<button id="nextButton">Next Question</button>`
   }
   else if (STORE.page === "Completed") {
-      html = `
+    if (STORE.score > 12) {
+ html = `
+        <div id="quiz-container" class="container text-center card">
+                <div class="row">
+                   <div class="col">
+                   <p class="lead">You did it! You are definitely a Marvel Superfan!</p>
       <button id="startBtn">Restart</button>
+      </div>
+      </div>
+      </div>
       `
+    } else {
+html = `
+        <div id="quiz-container" class="container text-center card">
+                <div class="row">
+                   <div class="col">
+                   <p class="lead">You did not pass the test, please try again!</p>
+      <button id="startBtn">Restart</button>
+      </div>
+      </div>
+      </div>
+      `
+    }
+     
     }
   html = `
   <div id="scoresQuestionNumDiv">  
